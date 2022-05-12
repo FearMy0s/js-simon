@@ -1,6 +1,6 @@
 let Arrayrandom = [];
-let Arraynumber =[];
 let Arrayanswer =[];
+const numbers = Arrayanswer.join(" - ");
 function Random() {
     return Math.floor(Math.random() * 100 );
 }
@@ -13,15 +13,13 @@ console.log(Arrayrandom)
 setTimeout(Userimput,1000);
 
 function Userimput() {
-    for(i=1 ; i<=5;i++){
+    for(let i=1 ; i<=5;i++){    
         Usernumber = prompt("Inserisci Numero");
-        const Num = Usernumber;
-        Arraynumber.push(Num);
-        if (Arrayrandom.includes(Num)) {
-          correctNumbers.push(Num);
+        Arrayanswer.push(Usernumber);
+        if (Arrayrandom.includes(Usernumber)) {
+          Arrayanswer.push(Usernumber);
       }
     }    
-    const numbers = Arrayanswer.join(" - ");
     alert(`Hai indovinato ${Arrayanswer.length} numeri: ${numbers}`);
   }
  
