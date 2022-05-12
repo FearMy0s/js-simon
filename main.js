@@ -10,15 +10,14 @@ function Random() {
 }
 Random();
 
-setTimeout(Userimput , 1000);
+setTimeout(Userimput , 30000);
 function Userimput() {
-    for(let i=0 ; i<=5;i++){    
+    for(let i=1 ; i<=5;i++){    
     const  Usernumber = Number (prompt("Inserisci Numero"));
     if (Arrayrandom.includes(Usernumber)) {
       Arrayanswer.push(Usernumber);
 }
     }
     console.log(Arrayanswer)
+    alert(`Hai indovinato ${Arrayanswer.length} numeri: ${Arrayanswer}`);
 }
-Userimput();
-alert(`Hai indovinato ${Arrayanswer.length} numeri: ${Arrayanswer}`);
