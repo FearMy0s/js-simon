@@ -2,14 +2,13 @@ let Arrayrandom = [];
 let Arrayanswer =[];
 const numbers = Arrayanswer.join(" - ");
 function Random() {
-    return Math.floor(Math.random() * 100 );
+    for(let i = 1 ; i<=5; i++){
+    const NumRandom =  Math.floor(Math.random() * 100 );
+    alert(NumRandom);
+    Arrayrandom.push(NumRandom)
+ }
+ console.log(Arrayrandom)
 }
-for(let i = 1 ; i<=5; i++){
-    const Numrandom = Random();
-    alert(Random());
-    Arrayrandom.push(Numrandom)
-}
-console.log(Arrayrandom)
 setTimeout(Userimput,1000);
 
 function Userimput() {
