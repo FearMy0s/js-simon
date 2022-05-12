@@ -9,6 +9,7 @@ function Random() {
  }
  console.log(Arrayrandom)
 }
+let PcNumbers = Random();
 setTimeout(Userimput,1000);
 
 function Userimput() {
@@ -19,6 +20,6 @@ function Userimput() {
           Arrayanswer.push(Usernumber);
       }
     }    
+    }
+    let Results = Userimput();
     alert(`Hai indovinato ${Arrayanswer.length} numeri: ${numbers}`);
-  }
- 
